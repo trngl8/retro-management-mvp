@@ -33,10 +33,15 @@
 
                 <h1 class="mb-4">Login</h1>
 
-                <form name="registration_form" action="login-invalid.html" method="post">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Invalid email or password.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>    
+
+                <form name="registration_form" action="login-invalid.html" method="get">
                     <div class="mb-3">
                         <label for="email" class="form-label required">Email</label>
-                        <input type="email" id="email" name="_email" required="required" class="form-control" placeholder="retroduck@world.com" />
+                        <input type="email" id="email" name="_email" required="required" class="form-control" value="retroduck@world.com" placeholder="retroduck@world.com" />
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label required">Password</label>
