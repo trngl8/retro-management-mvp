@@ -18,6 +18,10 @@
             fill: currentColor;
         }
 
+        .large-icon {
+            font-size: 1.5em;
+        }
+
     </style>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2LY8CH0Z6"></script>
@@ -57,7 +61,7 @@
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -110,7 +114,7 @@
                 <div class="dropdown">
                     <a class="btn btn-outline-warning dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-person"></i>
-                        user@retroduck.com
+                        John Doe
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -129,19 +133,45 @@
     <main class="flex-shrink-0">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2">
-                    
+                <div class="col-md-2 pt-5 ps-4">
+                    <h5>Team members</h2> 
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="link-dark">
+                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                    John Doe
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-dark">
+                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                    Duck Retroduct
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-dark">
+                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                    The One
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-dark">
+                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+                                    Maria Now
+                                </a>
+                            </li>
+                        </ul>   
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <div class="conatiner">
                         <div class="row mt-5">
                             <div class="col-md-3">
                                 <div class="fs-1">
-                                    
-                                    <i class="bi bi-hand-thumbs-up"></i>
+                                    <i class="bi bi-hand-thumbs-up text-warning large-icon"></i>
                                 </div>
-                                <h4>Goes well</h4>
+                                <h4 class="pt-3">Goes well</h4>
+                                <p>Items we should continue</p>
                                 <form class="messageForm" data-target="wellMessages" data-type="btn-warning">
                                     <div class="mb-3">
                                     <input type="text" class="form-control" class="userInput">
@@ -150,8 +180,11 @@
                                 <div id="wellMessages"></div>
                             </div>
                             <div class="col-md-3">
-                                <div class="fs-1"><i class="bi bi-hand-thumbs-down"></i></i></div>
-                                <h4>Should be better</h4>
+                                <div class="fs-1">
+                                    <i class="bi bi-exclamation-circle text-danger large-icon"></i>
+                                </div>
+                                <h4 class="pt-3">Should be better</h4>
+                                <p>Items we should stop</p>
                                 <form class="messageForm" data-target="badMessages" data-type="btn-danger">
                                     <div class="mb-3">
                                     <input type="text" class="form-control" class="userInput">
@@ -160,8 +193,11 @@
                                 <div id="badMessages"></div>
                             </div>
                             <div class="col-md-3">
-                                <div class="fs-1"><i class="bi bi-question-circle"></i></div>
-                                <h4>Action points</h4>
+                                <div class="fs-1 ">
+                                    <i class="bi bi-question-circle text-success large-icon"></i>
+                                </div>
+                                <h4 class="pt-3">Action points</h4>
+                                <p>Items for implementing changes</p>
                                 <form class="messageForm" data-target="actionMessages" data-type="btn-success">
                                     <div class="mb-3">
                                     <input type="text" class="form-control" class="userInput">
@@ -171,36 +207,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-2 mt-5">
-                    <h5>Team members</h2> 
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-                                    John Doe
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-                                    Duck Retroduct
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-                                    The One
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-                                    Maria Now
-                                </a>
-                            </li>
-                        </ul>   
                 </div>
             </div>
             
@@ -220,7 +226,6 @@
                 event.preventDefault(); 
                 
                 let inputField = this.querySelector("input");
-                console.log(inputField);
                 let userInput = inputField.value.trim();
                 let targetListId = this.getAttribute("data-target");
                 let targetList = document.getElementById(targetListId);
@@ -230,7 +235,7 @@
                     messageDiv.textContent = userInput;
                     messageDiv.classList.add("btn",  this.getAttribute("data-type"), "disabled",  "placeholder", "col-12", "text-start", "mb-2");
 
-                    targetList.appendChild(messageDiv);
+                    targetList.prepend(messageDiv);
 
                     inputField.value = "";
                 }
