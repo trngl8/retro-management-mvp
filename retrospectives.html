@@ -17,11 +17,6 @@
             vertical-align: -.125em;
             fill: currentColor;
         }
-
-        .large-icon {
-            font-size: 1.5em;
-        }
-
     </style>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2LY8CH0Z6"></script>
@@ -97,10 +92,10 @@
           <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Current</a>
+                <a class="nav-link" href="app.html">Current</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="retrospectives.html">Restrospectives</a>
+                <a class="nav-link active" aria-current="page" href="retrospectives.html">Restrospectives</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Collaborate</a>
@@ -166,47 +161,37 @@
                         </ul>   
                 </div>
 
-                <div class="col-md-10">
+                <div class="col-md-10 pt-5">
                     <div class="conatiner">
-                        <div class="row mt-5">
-                            <div class="col-md-3">
-                                <div class="fs-1">
-                                    <i class="bi bi-hand-thumbs-up text-warning large-icon"></i>
+                        <div class="d-flex flex-row mb-3">
+                            <div class="card p-1 me-3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sprint 01</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">26.03.2025</h6>
+                                    <p class="card-text">Description ot other stuff</p>
+                                    <a href="#" class="card-link">Details</a>
+                                    <a href="#" class="card-link">Results</a>
                                 </div>
-                                <h4 class="pt-3">Goes well</h4>
-                                <p>Items we should continue</p>
-                                <form class="messageForm" data-target="wellMessages" data-type="btn-warning">
-                                    <div class="mb-3">
-                                    <input type="text" class="form-control" class="userInput">
-                                    </div>
-                                </form>
-                                <div id="wellMessages"></div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="fs-1">
-                                    <i class="bi bi-exclamation-circle text-danger large-icon"></i>
+    
+                            <div class="card p-1 me-3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sprint 02</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">26.03.2025</h6>
+                                    <p class="card-text">Description ot other stuff</p>
+                                    <a href="#" class="card-link">Details</a>
+                                    <a href="#" class="card-link">Results</a>
                                 </div>
-                                <h4 class="pt-3">Should be better</h4>
-                                <p>Items we should stop</p>
-                                <form class="messageForm" data-target="badMessages" data-type="btn-danger">
-                                    <div class="mb-3">
-                                    <input type="text" class="form-control" class="userInput">
-                                    </div>
-                                </form>
-                                <div id="badMessages"></div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="fs-1 ">
-                                    <i class="bi bi-question-circle text-success large-icon"></i>
+
+                            <div class="card p-1 me-3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sprint 03</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">26.03.2025</h6>
+                                    <p class="card-text">Description ot other stuff</p>
+                                    <a href="#" class="card-link">Details</a>
+                                    <a href="#" class="card-link">Results</a>
                                 </div>
-                                <h4 class="pt-3">Action points</h4>
-                                <p>Items for implementing changes</p>
-                                <form class="messageForm" data-target="actionMessages" data-type="btn-success">
-                                    <div class="mb-3">
-                                    <input type="text" class="form-control" class="userInput">
-                                    </div>
-                                </form>
-                                <div id="actionMessages"></div>
                             </div>
                         </div>
                     </div>
@@ -221,29 +206,5 @@
           <span class="text-body-secondary">&copy; Triangle Software</span>
         </div>
     </footer>
-
-    <script>
-
-        document.querySelectorAll(".messageForm").forEach(form => {
-            form.addEventListener("submit", function(event) {
-                event.preventDefault(); 
-                
-                let inputField = this.querySelector("input");
-                let userInput = inputField.value.trim();
-                let targetListId = this.getAttribute("data-target");
-                let targetList = document.getElementById(targetListId);
-
-                if (userInput !== "") {
-                    let messageDiv = document.createElement("a");
-                    messageDiv.textContent = userInput;
-                    messageDiv.classList.add("btn",  this.getAttribute("data-type"), "disabled",  "placeholder", "col-12", "text-start", "mb-2");
-
-                    targetList.prepend(messageDiv);
-
-                    inputField.value = "";
-                }
-            });
-        });
-    </script>
 </body>
 </html>
