@@ -1,3 +1,4 @@
+<!-- layout page -->
 <!DOCTYPE html>
 <html lang="en" class="h-100" data-bs-theme="auto">
 <head>
@@ -10,20 +11,9 @@
     <link rel="apple-touch-icon" sizes="512x512" href="public/favicons/apple-touch-icon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <style>
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
+    <link href="public/css/app.css" rel="stylesheet" type="text/css">
 
-        .large-icon {
-            font-size: 1.5em;
-        }
-
-    </style>
-    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2LY8CH0Z6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -39,23 +29,26 @@
         <symbol id="duck" viewBox="0 0 122.88 114.66">
             <path class="cls-1" d="M95.31,76.23A18.59,18.59,0,0,0,91.88,65c-.65-1-2.41,8.79-15.28,8C53,71.67,45.61,77,46.87,82.69s6.56,9.11,13.19,10.62C72.5,96.13,94.48,92,95.31,76.23ZM46.71,16.29A5.28,5.28,0,1,0,52,21.57a5.28,5.28,0,0,0-5.27-5.28ZM34.18,42.94C9.65,49.45,7,110.21,61.66,110.29c42.05.07,72.55-36.18,48.19-73.38-1.63-2.49-6,22-38.19,20.06-19.75-1.16-20.28,13.24-16.48-4,16.27-3,22.24-20.15,18-33.16-10.59-32.58-70.18-8-39,23.17Zm-8.79-.42C16.06,38.4,15.87,40.3,5.5,33c-7.29-5.56-8.44-10.42,3.36-11.49a59.74,59.74,0,0,0,13-2.58c.11-.36.24-.72.37-1.08,2.12-5.68,6.59-10.3,12.13-13.41A35.23,35.23,0,0,1,52.39,0c10.66.34,20.86,5.79,25,18.4a30,30,0,0,1,1,3.92,32.41,32.41,0,0,1-2.7,20,27.46,27.46,0,0,1-8.58,10.24,41.35,41.35,0,0,1,4.85,0c22,1.29,29.36-11.07,32.27-15.94A9.76,9.76,0,0,1,107,33.13h0c2.6-1.7,4.72-1.37,6.51,1.37,6.49,9.91,9.38,19.85,9.37,29.21a44.59,44.59,0,0,1-6.35,22.86,53.29,53.29,0,0,1-16.82,17.28,69.29,69.29,0,0,1-38,10.8c-20.24,0-33.37-7.86-40.85-18.47a42.76,42.76,0,0,1-7.23-18.44,45,45,0,0,1,1.16-18.51c2-6.92,5.63-12.89,10.65-16.72ZM24.27,37.7l-.48-1.28A23.23,23.23,0,0,1,21,23,105.81,105.81,0,0,1,6.7,25.49c-1.78.21-2.52.3-2.27.86,3.1,6.86,13,8.46,19.84,11.35Z"/>
         </symbol>
-        <symbol id="chevron-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-        </symbol>
-        <symbol id="table" viewBox="0 0 16 16">
-            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
-        </symbol>
         <symbol id="people-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
         </symbol>
-        <symbol id="collection" viewBox="0 0 16 16">
-            <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+        <symbol id="thumbs-up" viewBox="0 0 16 16">
+            <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
         </symbol>
-        <symbol id="toggles2" viewBox="0 0 16 16">
-            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
-            <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
-            <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+        <symbol id="exclamation-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+        </symbol>
+        <symbol id="question-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+        </symbol>
+        <symbol id="person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </symbol>
+        <symbol id="hamburger" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
         </symbol>
     </svg>
 
@@ -89,7 +82,7 @@
               Retroduck
             </a>
           </div>  
-          <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" href="#"><i class="bi bi-list"></i> </a>
+          <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" href="#"><svg class="bi" width="1em" height="1em"><use xlink:href="#hamburger"/></svg> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -116,7 +109,7 @@
             <div class="text-white">
                 <div class="dropdown">
                     <a class="btn btn-outline-warning dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person"></i>
+                        <svg class="bi" width="1em" height="1em"><use xlink:href="#person"/></svg>
                         John Doe
                     </a>
 
@@ -171,7 +164,7 @@
                         <div class="row mt-5">
                             <div class="col-md-3">
                                 <div class="fs-1">
-                                    <i class="bi bi-hand-thumbs-up text-warning large-icon"></i>
+                                    <svg class="bi text-warning" width="1em" height="1em"><use xlink:href="#thumbs-up"/></svg>
                                 </div>
                                 <h4 class="pt-3">Goes well</h4>
                                 <p>Items we should continue</p>
@@ -184,7 +177,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="fs-1">
-                                    <i class="bi bi-exclamation-circle text-danger large-icon"></i>
+                                    <svg class="bi text-danger" width="1em" height="1em"><use xlink:href="#exclamation-circle"/></svg>
                                 </div>
                                 <h4 class="pt-3">Should be better</h4>
                                 <p>Items we should stop</p>
@@ -196,8 +189,8 @@
                                 <div id="badMessages"></div>
                             </div>
                             <div class="col-md-3">
-                                <div class="fs-1 ">
-                                    <i class="bi bi-question-circle text-success large-icon"></i>
+                                <div class="fs-1">
+                                    <svg class="bi text-success" width="1em" height="1em"><use xlink:href="#question-circle"/></svg>
                                 </div>
                                 <h4 class="pt-3">Action points</h4>
                                 <p>Items for implementing changes</p>
@@ -222,28 +215,6 @@
         </div>
     </footer>
 
-    <script>
-
-        document.querySelectorAll(".messageForm").forEach(form => {
-            form.addEventListener("submit", function(event) {
-                event.preventDefault(); 
-                
-                let inputField = this.querySelector("input");
-                let userInput = inputField.value.trim();
-                let targetListId = this.getAttribute("data-target");
-                let targetList = document.getElementById(targetListId);
-
-                if (userInput !== "") {
-                    let messageDiv = document.createElement("a");
-                    messageDiv.textContent = userInput;
-                    messageDiv.classList.add("btn",  this.getAttribute("data-type"), "disabled",  "placeholder", "col-12", "text-start", "mb-2");
-
-                    targetList.prepend(messageDiv);
-
-                    inputField.value = "";
-                }
-            });
-        });
-    </script>
+    <script src="public/js/app.js"></script>
 </body>
 </html>
