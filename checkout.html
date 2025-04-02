@@ -89,109 +89,86 @@
         </div>
     </header>
 
-    <div class="container pricing-container py-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
-            <p class="fs-5 text-body-secondary">Take a look on our plans and estimates</p>
-          </div
-
+    <div class="container">
         <main>
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Free</h4>
-                </div>
+          <div class="py-5 text-center">
+            <h2>Checkout</h2>
+            <p class="lead">Fill you data to order</p>
+          </div>
+      
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-secondary">Your order</span>
+                <span class="badge bg-secondary rounded-pill">new</span>
+              </h4>
+              <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                    <li>5 users</li>
-                    <li>1 GB of storage</li>
-                    </ul>
-                    <a href="registration.html" class="w-100 btn btn-lg btn-outline-secondary">Sign up for free</a>
+                  <h5 class="card-title">Pro</h5>
+                  <p class="card-text">Professinal account</p>
                 </div>
-                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Monthly subscription</h6>
+                      <small class="text-body-secondary">Extended plan</small>
+                    </div>
+                    <span class="text-body-secondary">$50</span>
+                  </li>
+                  
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD)</span>
+                    <strong>$50</strong>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Account data</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label for="firstName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email 
+                    </div>
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Ukraine</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$50<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users</li>
-                    <li>10 GB of storage</li>
-                    </ul>
-                    <a href="checkout.html" class="w-100 btn btn-lg btn-warning">Get started</a>
+      
+                <hr class="my-4">
+    
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info" checked="checked">
+                  <label class="form-check-label" for="save-info">Save this information for next time</label>
                 </div>
-                </div>
+      
+                <button class="w-100 btn btn-warning btn-lg mt-5 mb-5" type="submit">Continue to checkout</button>
+              </form>
             </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm border-secondary">
-                <div class="card-header py-3 text-bg-secondary border-secondary">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$100<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                    <li>300 users</li>
-                    <li>150 GB of storage</li>
-                    </ul>
-                    <a href="contacts.html" class="w-100 btn btn-lg btn-warning">Contact us</a>
-                </div>
-                </div>
-            </div>
-            </div>
-        
-            <h2 class="display-6 text-center mb-4">Compare plans</h2>
-        
-            <div class="table-responsive">
-            <table class="table text-center">
-                <thead>
-                <tr>
-                    <th style="width: 34%;"></th>
-                    <th style="width: 22%;">Free</th>
-                    <th style="width: 22%;">Pro</th>
-                    <th style="width: 22%;">Enterprise</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row" class="text-start">Private members</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-start">Integrations</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-start">Sharing</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-start">Unlimited members</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-start">Extra storage</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-                </tr>
-                </tbody>
-            </table>
-            </div>
+          </div>
         </main>
-    </div>
+    </div>      
 
     <hr />
 
