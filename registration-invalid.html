@@ -10,14 +10,6 @@
 
     <link href="public/css/account.css" rel="stylesheet" type="text/css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2LY8CH0Z6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-E2LY8CH0Z6');
-    </script>
 </head>
 <body class="d-flex h-100 text-white bg-dark">
 
@@ -51,7 +43,7 @@
 
                     <h1 class="mb-4">Registration</h1>
 
-                    <form method="get"  name="registration_form" method="post" action="registration-success.html" novalidate>
+                    <form method="get"  name="registration_form" method="get" action="registration-success.html" novalidate>
                         <div class="mb-3">
                             <label for="registration_form_name" class="form-label required">Name</label>
                             <input type="text" id="registration_form_name" name="registration_form[name]" required="required" value="retro" class="form-control" />

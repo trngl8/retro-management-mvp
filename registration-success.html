@@ -1,0 +1,62 @@
+<!-- extends login.html -->
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retroduck &mdash; Registraion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="public/css/account.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="d-flex h-100 text-white bg-dark">
+
+    <!-- Modal -->
+    <div class="modal fadet text-dark" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="termsModalLabel">Terms and Conditions</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                The product Retroduck is a property of Triangle Software. By registering you agree to the terms and conditions of the product.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Ok</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <header class="mb-auto">
+            <div class="text-end"></div>
+        </header>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-8">
+
+                    <h1 class="mb-4">Check email</h1>
+
+                    <p>User registered, check email and click a link to verify your account.</p>
+
+                    <p>If you haven't gotten any email from this domain, check a 'spam' folder.</p>
+                    <div class="mt-5">
+                        <a class="btn btn-outline-secondary" href="index-registered.html">Homepage</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-auto text-white-50">
+            <p>&copy; <a href="https://triangle.software" class="text-white">Triangle Software</a>. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
